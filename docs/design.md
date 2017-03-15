@@ -20,6 +20,7 @@
   - sine wave scrolling when *page* is clicked
 
 # Data Model
+![Component data model](wireframes/4.jpg)
 
 # Component List
 - Page
@@ -34,5 +35,10 @@
 - ProjectPopup
 - DetailSection
 
-# Component Data Flow
+# Other Classes
+- TextDatabase
+- ProjectData
+- SummaryData
+
+# Component Hierachy and data flow
 ![Component data flow](wireframes/3.jpg)
