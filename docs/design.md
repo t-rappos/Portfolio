@@ -21,4 +21,18 @@
 
 # Data Model
 
-# Component Diagrams
+# Component List
+- Page
+- Header
+- LandingPage
+- StartIcon
+- SummarySection
+- SummaryItem
+- ProjectSection
+- ProjectFilter
+- ProjectItem
+- ProjectPopup
+- DetailSection
+
+# Component Data Flow
+![Component data flow](wireframes/3.jpg)
