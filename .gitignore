@@ -35,3 +35,11 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+**/node_modules
+**/db_config
+**/coverage
+public/bundle.js
+**/dist
+**/.nyc_output
+npm-debug.log
