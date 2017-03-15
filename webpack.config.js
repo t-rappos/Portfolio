@@ -24,7 +24,11 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Header: 'app/components/Header.jsx',
       LandingPage: 'app/components/LandingPage.jsx',
-      StartIcon: 'app/components/StartIcon.jsx'
+      StartIcon: 'app/components/StartIcon.jsx',
+      SummarySection: 'app/components/SummarySection.jsx',
+      SummaryItem: 'app/components/SummaryItem.jsx',
+      ProjectSection: 'app/components/ProjectSection.jsx',
+      ProjectItem: 'app/components/ProjectItem.jsx'
     },
     extensions: ['','.js','.jsx']
   },

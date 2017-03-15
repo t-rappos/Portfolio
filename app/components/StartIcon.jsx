@@ -1,11 +1,12 @@
 import React from 'react';
 
 const startIconStyle = {
-    backgroundColor: '#FFD4AA',
+    backgroundColor: '#FFF2E0',
     width: '6em',
     textAlign: 'center',
     position: 'absolute',
     bottom: '0',
+    color: 'black',
     left: '45vw'
 };
 

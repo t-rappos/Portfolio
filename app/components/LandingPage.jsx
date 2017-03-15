@@ -24,7 +24,7 @@ class LandingPage extends React.Component {
   render() {
     return (
     <div style = {landingPageStyle}>
-      <h2>Hi, Im Tom and welcome to my portfolio website</h2>
+      <h2>Hi, Im Tom and welcome to my portfolio website.</h2>
       <StartIcon/>
     </div>  );
   }

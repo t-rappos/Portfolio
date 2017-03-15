@@ -1,7 +1,8 @@
 var React = require('react');
 let Header = require('Header');
 let LandingPage = require('LandingPage');
-
+let SummarySection = require('SummarySection');
+let ProjectSection = require('ProjectSection');
 const appStyle = {
 
 };
@@ -19,6 +20,8 @@ class Main extends React.Component {
       <div ref={node => this.node = node} style={appStyle}>
         <Header/>
         <LandingPage/>
+        <SummarySection/>
+        <ProjectSection/>
         <div className='expanded row' style={mainWindowStyle} >
           <h1>Main Window</h1>
         </div>
