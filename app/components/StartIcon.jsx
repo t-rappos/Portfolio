@@ -5,7 +5,7 @@ const startIconStyle = {
     width: '6em',
     textAlign: 'center',
     color: 'black',
-    marginTop: '30%',
+    marginTop: '40vh',
     marginLeft: 'auto',
     marginRight: 'auto',
 
