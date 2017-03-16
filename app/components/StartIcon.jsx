@@ -4,10 +4,11 @@ const startIconStyle = {
     backgroundColor: '#FFF2E0',
     width: '6em',
     textAlign: 'center',
-    position: 'absolute',
-    bottom: '0',
     color: 'black',
-    left: '45vw'
+    marginTop: '30%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+
 };
 
 class StartIcon extends React.Component {
