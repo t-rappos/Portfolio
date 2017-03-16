@@ -13,7 +13,7 @@ class ProjectSection extends React.Component {
   render() {
     return (
     <div style = {projectSectionStyle}>
-      <p>ProjectSection</p>
+      <p id='projects'>ProjectSection</p>
       <div className="row">
         <div className="large-2 small-4 columns">
           <ProjectItem

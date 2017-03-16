@@ -13,7 +13,7 @@ class SummarySection extends React.Component {
   render() {
     return (
     <div style = {summarySectionStyle}>
-      <p>summary section</p>
+      <p id='about-me'>summary section</p>
       <div className="row">
         <div className="large-4 columns">
           <SummaryItem title='summary' img='./assets/logo_project.png' text='this is a summary'/>

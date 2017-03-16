@@ -9,6 +9,7 @@
 - Copy over old code (without node_modules)
 - Cut out irrelevant parts
 - npm install
+- (on laptop had to npm install webpack 1.14.0 -g)
 - webpack -w
 - npm test
 - npm run
