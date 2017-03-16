@@ -6,7 +6,7 @@ const landingPageStyle = {
   textAlign: 'center',
   background: 'linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),\
     url(./assets/logo_nodejs.png)',
-  height: '95vh',
+  height: '92vh',
   width: '100%',
   padding: '15%',
   position: 'relative',

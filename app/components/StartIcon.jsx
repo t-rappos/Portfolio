@@ -16,10 +16,12 @@ class StartIcon extends React.Component {
   }
   render() {
     return (
-    <div style = {startIconStyle}>
-      <p>See More!</p>
-      <p>˅</p>
-    </div>  );
+      <a href="#about-me">
+        <div style = {startIconStyle}>
+          <p>See More!</p>
+          <p>˅</p>
+        </div>
+      </a>  );
   }
 }
 
