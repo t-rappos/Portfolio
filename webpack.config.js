@@ -29,7 +29,8 @@ module.exports = {
       SummaryItem: 'app/components/SummaryItem.jsx',
       ProjectSection: 'app/components/ProjectSection.jsx',
       ProjectItem: 'app/components/ProjectItem.jsx',
-      DetailsSection: 'app/components/DetailsSection.jsx'
+      DetailsSection: 'app/components/DetailsSection.jsx',
+      ProjectPopup: 'app/components/ProjectPopup.jsx'
     },
     extensions: ['','.js','.jsx']
   },

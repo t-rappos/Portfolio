@@ -13,6 +13,11 @@ require('style!css!bootstrap/dist/css/bootstrap.css');
 require('style!css!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
+
+//import { Button,Modal } from 'react-bootstrap';
+
+
+
 ReactDOM.render(
   <div>
       <Router history={hashHistory}>

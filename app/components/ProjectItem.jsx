@@ -1,12 +1,19 @@
 import React from 'react';
 
-const projectItemStyle = {
- textAlign: 'center',
- margin: '5px'
+let ProjectPopup = require('ProjectPopup');
+import { Button,Modal } from 'react-bootstrap';
+
+const clickStyle = {
+cursor: 'pointer',
+textAlign: 'center',
+margin: '5px',
+transition: 'background-color 0.2s ease',
 };
 
-const projectItemStyleHover = {
+const clickStyleHover = {
+ cursor: 'pointer',
  textAlign: 'center',
+ transition: 'background-color 0.2s ease',
  backgroundColor: '#FFE4C1',
  margin: '5px'
 };
@@ -14,10 +21,13 @@ const projectItemStyleHover = {
 class ProjectItem extends React.Component {
   constructor(props){
     super(props);
-    this.state = {hover: false};
+    this.state = {showModal: false};
   }
-  onClick(e){
-    alert('On Click');
+  close() {
+    this.setState({ showModal: false });
+  }
+  open() {
+    this.setState({ showModal: true });
   }
   onMouseEnter(e){
     this.setState({hover: true});
@@ -28,13 +38,31 @@ class ProjectItem extends React.Component {
 
   render() {
     return (
-      <div onClick= {this.onClick.bind(this)}
-        onMouseEnter= {this.onMouseEnter.bind(this)}
-        onMouseLeave= {this.onMouseLeave.bind(this)}
-          style = {this.state.hover ? projectItemStyleHover : projectItemStyle}>
+      <div
+        onClick={this.open.bind(this)}
+         style={this.state.hover?clickStyleHover:clickStyle}
+         onMouseEnter= {this.onMouseEnter.bind(this)}
+         onMouseLeave= {this.onMouseLeave.bind(this)}>
         <img src={this.props.icon} alt=''/>
         <p>{this.props.name}</p>
         <p>{this.props.tags[0]}, {this.props.tags[1]}, {this.props.tags[2]}</p>
+
+        <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
+          <Modal.Header closeButton>
+            <Modal.Title>{this.props.name}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+              <ProjectPopup
+                name = {this.props.name}
+                image = {this.props.image}
+                text = {this.props.text}
+                category = {this.props.category}
+                tags = {this.props.tags}/>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.close.bind(this)}>Close</Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     );
   }
