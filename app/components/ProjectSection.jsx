@@ -5,6 +5,8 @@ const projectSectionStyle = {
   backgroundColor: '#FFF2E0'
 };
 
+const gridName = "large-2 medium-4 small-6 columns";
+
 class ProjectSection extends React.Component {
   constructor(props){
     super(props);
@@ -15,7 +17,7 @@ class ProjectSection extends React.Component {
     <div style = {projectSectionStyle}>
       <p id='projects'>ProjectSection</p>
       <div className="row">
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -25,7 +27,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -35,7 +37,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -45,7 +47,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -55,7 +57,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -65,7 +67,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -75,7 +77,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
@@ -85,7 +87,7 @@ class ProjectSection extends React.Component {
             toDisplay = 'true'
             text='this is a summary of the project'/>
         </div>
-        <div className="large-2 small-4 columns">
+        <div className={gridName}>
           <ProjectItem
             name='project name'
             icon='./assets/logo_project.png'
