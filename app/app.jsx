@@ -1,12 +1,15 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
+/* eslint-disable */
+
+/* eslint-enable */
 let {Route, Router, hashHistory} = require('react-router');
 let Main = require('Main');
-
 
 var $ = require('jquery');
 
 //load foundation
+require('style!css!bootstrap/dist/css/bootstrap.css');
 require('style!css!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 

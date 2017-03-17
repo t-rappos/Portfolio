@@ -36,6 +36,13 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
+#Bootstrap
+*.woff2
+*.svg
+*.ttf
+*.eot
+*.woff
+
 **/node_modules
 **/db_config
 **/coverage
