@@ -4,6 +4,9 @@ const projectPopupStyle = {
 
 };
 
+const projectTagStyle = {
+  margin: '2px'
+};
 
 class ProjectPopup extends React.Component {
   constructor(props){
@@ -11,14 +14,15 @@ class ProjectPopup extends React.Component {
   }
 
   render() {
+    var items = this.props.tags.map((tag)=>{
+      return (<span style = {projectTagStyle} className="label label-default">{tag}</span>);
+    });
     return (
       <div style = {projectPopupStyle}>
         <p>{this.props.category}</p>
         <img src={this.props.image} alt={this.props.name}/>
         <p>{this.props.text}</p>
-        <span className="label label-default">{this.props.tags[0]}</span>
-        <span className="label label-primary">{this.props.tags[1]}</span>
-        <span className="label label-success">{this.props.tags[2]}</span>
+        {items}
       </div>
     );
   }
