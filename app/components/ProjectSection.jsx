@@ -5,7 +5,7 @@ const projectSectionStyle = {
   backgroundColor: '#FFF2E0'
 };
 
-const gridName = "large-2 medium-4 small-6 columns";
+const gridName = "col-lg-2 col-md-4 col-sm-4 col-xs-12";
 
 class ProjectSection extends React.Component {
   constructor(props){

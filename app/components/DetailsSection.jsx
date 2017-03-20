@@ -1,7 +1,8 @@
 import React from 'react';
 
 const detailsSectionStyle = {
-  backgroundColor: '#FFE4C1'
+  backgroundColor: '#FFE4C1',
+  marginTop : '-20px'
 };
 
 class DetailsSection extends React.Component {

@@ -13,11 +13,12 @@ class ProjectPopup extends React.Component {
   render() {
     return (
       <div style = {projectPopupStyle}>
-        <h2>{this.props.name}</h2>
         <p>{this.props.category}</p>
         <img src={this.props.image} alt={this.props.name}/>
         <p>{this.props.text}</p>
-        <p>{this.props.tags[0]}, {this.props.tags[1]}, {this.props.tags[2]}</p>
+        <span className="label label-default">{this.props.tags[0]}</span>
+        <span className="label label-primary">{this.props.tags[1]}</span>
+        <span className="label label-success">{this.props.tags[2]}</span>
       </div>
     );
   }

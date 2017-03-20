@@ -4,6 +4,31 @@ const headerStyle = {
   backgroundColor: '#FFF2E0'
 };
 */
+
+/*
+<div className="top-bar">
+  <div className="top-bar-title">
+    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    </span>
+    <strong></strong>
+  </div>
+  <div id="responsive-menu">
+    <div className="top-bar-left">
+      <ul className="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#in-detail">In Detail</a></li>
+      </ul>
+    </div>
+    <div className="top-bar-right">
+      <ul className="menu">
+        <li><a href="https://github.com/t-rappos/Portfolio/">See Github</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+*/
 class Header extends React.Component {
   constructor(props){
     super(props);
@@ -11,28 +36,26 @@ class Header extends React.Component {
   render() {
     return (
 
-      <div className="top-bar">
-        <div className="top-bar-title">
-          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-          </span>
-          <strong></strong>
-        </div>
-        <div id="responsive-menu">
-          <div className="top-bar-left">
-            <ul className="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about-me">About Me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#in-detail">In Detail</a></li>
-            </ul>
-          </div>
-          <div className="top-bar-right">
-            <ul className="menu">
-              <li><a href="https://github.com/t-rappos/Portfolio/">See Github</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<div>
+  <nav className="navbar navbar-default">
+  <div className="container-fluid">
+    <div className="navbar-header">
+      <a className="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <ul className="nav navbar-nav">
+        <li className="active"><a href="#">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#in-detail">In Detail</a></li>
+    </ul>
+    <ul className="nav navbar-nav navbar-right">
+      <li><a href="https://github.com/t-rappos/Portfolio/">See Github</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
 
     );
   }

@@ -10,7 +10,7 @@ var $ = require('jquery');
 
 //load foundation
 require('style!css!bootstrap/dist/css/bootstrap.css');
-require('style!css!foundation-sites/dist/css/foundation.min.css');
+//require('style!css!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
 
