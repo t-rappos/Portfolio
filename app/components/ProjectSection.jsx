@@ -21,7 +21,7 @@ const PROJECT_DEFINITIONS = [
 {name: 'Pick and Place robot',icon:DefaultIcon, image: DefaultImage, tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'], text:'', category: 'web'},
 {name: 'Portfolio Website',icon:DefaultIcon, image: DefaultImage, tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'], text:'', category: 'web'}];
 
-const gridName = "col-lg-2 col-md-4 col-sm-4 col-xs-12";
+const gridName = "col-lg-3 col-md-5 col-sm-5 col-xs-12";
 
 class ProjectSection extends React.Component {
   constructor(props){
@@ -30,10 +30,12 @@ class ProjectSection extends React.Component {
 
   render() {
     //TODO: we could send a 'project' object instead of all the parameters...
-    var items = PROJECT_DEFINITIONS.map((project)=>{
+    let keyNo = 0;
+    let items = PROJECT_DEFINITIONS.map((project)=>{
       return(
-        <div className={gridName}>
+        <div key = {keyNo} className={gridName}>
           <ProjectItem
+            key = {keyNo++}
             name={project.name}
             icon={project.icon}
             image={project.image}
@@ -46,9 +48,9 @@ class ProjectSection extends React.Component {
     });
 
     return (
-    <div style = {projectSectionStyle}>
+    <div className = "container-fluid" style = {projectSectionStyle}>
       <p id='projects'>ProjectSection</p>
-      <div className="row">
+      <div className="row row-eq-height" >
         {items}
       </div>
     </div>  );

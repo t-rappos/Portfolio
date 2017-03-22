@@ -13,6 +13,9 @@ const landingPageStyle = {
   overflow: 'hidden',
   color: 'white',
   textShadow: '0 1px 0 black',
+  /* Create the parallax scrolling effect */
+    backgroundAttachment: 'fixed',
+    backgroundAosition: 'center'
 };
 //https://cdn.pixabay.com/photo/2016/12/18/21/24/bridge-1916757_960_720.jpg
 //https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg

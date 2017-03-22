@@ -6,16 +6,23 @@ import { Button,Modal } from 'react-bootstrap';
 const clickStyle = {
 cursor: 'pointer',
 textAlign: 'center',
-margin: '5px',
 transition: 'background-color 0.2s ease',
+backgroundColor: '#AFE4C1'
 };
 
 const clickStyleHover = {
  cursor: 'pointer',
  textAlign: 'center',
  transition: 'background-color 0.2s ease',
- backgroundColor: '#FFE4C1',
- margin: '5px'
+ backgroundColor: '#FFE4C1'
+};
+
+const tagStyle = {
+  textAlign: 'justify',
+  textAlignLast: 'center',
+  fontSize: '90%',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
 };
 
 class ProjectItem extends React.Component {
@@ -37,6 +44,9 @@ class ProjectItem extends React.Component {
   }
 
   render() {
+    //let items = this.props.tags.map((tag)=>{
+    //  return(<p>{tag} </p>);
+    //});
     return (
       <div
         onClick={this.open.bind(this)}
@@ -44,8 +54,8 @@ class ProjectItem extends React.Component {
          onMouseEnter= {this.onMouseEnter.bind(this)}
          onMouseLeave= {this.onMouseLeave.bind(this)}>
         <img src={this.props.icon} alt=''/>
-        <p>{this.props.name}</p>
-        <p>{this.props.tags[0]}, {this.props.tags[1]}, {this.props.tags[2]}</p>
+        <p><strong>{this.props.name}</strong></p>
+        <p style={tagStyle} >{this.props.tags.join(", ")}</p>
 
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
