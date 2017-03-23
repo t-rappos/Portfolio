@@ -19,9 +19,8 @@ class ProjectPopup extends React.Component {
     });
     return (
       <div style = {projectPopupStyle}>
-        <p>{this.props.category}</p>
         <img src={this.props.image} alt={this.props.name}/>
-        <p>{this.props.text}</p>
+        <div dangerouslySetInnerHTML={{ __html: this.props.text }} />
         {items}
       </div>
     );

@@ -44,9 +44,6 @@ class ProjectItem extends React.Component {
   }
 
   render() {
-    //let items = this.props.tags.map((tag)=>{
-    //  return(<p>{tag} </p>);
-    //});
     return (
       <div
         onClick={this.open.bind(this)}
@@ -59,7 +56,7 @@ class ProjectItem extends React.Component {
 
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
-            <Modal.Title>{this.props.name}</Modal.Title>
+            <Modal.Title>{this.props.name} ({this.props.category})</Modal.Title>
           </Modal.Header>
           <Modal.Body>
               <ProjectPopup
