@@ -1,14 +1,22 @@
 import React from 'react';
 
 const startIconStyle = {
-    backgroundColor: '#FFF2E0',
     width: '6em',
     textAlign: 'center',
     color: 'black',
-    marginTop: '40vh',
+    marginTop: '30vh',
     marginLeft: 'auto',
     marginRight: 'auto',
+};
 
+const seeMoreImgStyle = {
+  maxWidth : '5em',
+  maxHeight : '5em',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  textAlign: 'center',
+  display: 'table-cell',
+  verticalAlign: 'middle'
 };
 
 class StartIcon extends React.Component {
@@ -19,8 +27,7 @@ class StartIcon extends React.Component {
     return (
       <a href="#about-me">
         <div style = {startIconStyle}>
-          <p>See More!</p>
-          <p>˅</p>
+          <img src='./assets/see-more.png' alt='see more' style={seeMoreImgStyle}></img>
         </div>
       </a>  );
   }
