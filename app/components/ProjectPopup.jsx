@@ -8,6 +8,10 @@ const projectTagStyle = {
   margin: '2px'
 };
 
+const imageStyle = {
+  maxWidth: '44vw'
+};
+
 class ProjectPopup extends React.Component {
   constructor(props){
     super(props);
@@ -19,7 +23,7 @@ class ProjectPopup extends React.Component {
     });
     return (
       <div style = {projectPopupStyle}>
-        <img src={this.props.image} alt={this.props.name}/>
+        <img style = {imageStyle} src={this.props.image} alt={this.props.name}/>
         <div dangerouslySetInnerHTML={{ __html: this.props.text }} />
         {items}
       </div>

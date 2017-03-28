@@ -7,14 +7,20 @@ const clickStyle = {
 cursor: 'pointer',
 textAlign: 'center',
 transition: 'background-color 0.2s ease',
-backgroundColor: '#AFE4C1'
+//backgroundColor: '#AFE4C1',
+width: '250px',
+height: '250px',
+padding: '10px'
 };
 
 const clickStyleHover = {
  cursor: 'pointer',
  textAlign: 'center',
  transition: 'background-color 0.2s ease',
- backgroundColor: '#FFE4C1'
+ backgroundColor: '#FFE4C1',
+ width: '250px',
+ height: '250px',
+ padding: '10px'
 };
 
 const tagStyle = {
@@ -24,6 +30,13 @@ const tagStyle = {
   overflow: 'hidden',
   textOverflow: 'ellipsis',
 };
+
+
+const iconStyle = {
+  maxWidth: '125px',
+  padding: '10px'
+};
+
 
 class ProjectItem extends React.Component {
   constructor(props){
@@ -50,7 +63,7 @@ class ProjectItem extends React.Component {
          style={this.state.hover?clickStyleHover:clickStyle}
          onMouseEnter= {this.onMouseEnter.bind(this)}
          onMouseLeave= {this.onMouseLeave.bind(this)}>
-        <img src={this.props.icon} alt=''/>
+        <img style = {iconStyle} src={this.props.icon} alt=''/>
         <p><strong>{this.props.name}</strong></p>
         <p style={tagStyle} >{this.props.tags.join(", ")}</p>
 

@@ -6,6 +6,11 @@ const summaryItemStyle = {
  textAlign: 'center'
 };
 
+const summaryImageStyle = {
+  maxWidth : '125px',
+  paddingBottom : '10px'
+};
+
 class SummaryItem extends React.Component {
   constructor(props){
     super(props);
@@ -18,8 +23,8 @@ class SummaryItem extends React.Component {
   render() {
     return (
     <div style = {summaryItemStyle}>
-      <p>{this.props.title}</p>
-      <img src={this.props.img} alt=''/>
+      <p><strong>{this.props.title}</strong></p>
+      <img style = {summaryImageStyle} src={this.props.img} alt=''/>
       <p>{this.props.text}</p>
     </div>  );
   }
