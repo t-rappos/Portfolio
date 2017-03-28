@@ -9,6 +9,7 @@ const appStyle = {
 
 };
 
+
 //https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

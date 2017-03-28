@@ -1,6 +1,6 @@
 import React from 'react';
 let ProjectItem = require('ProjectItem');
-
+let headings = require('./headings.jsx');
 const projectSectionStyle = {
   backgroundColor: '#FFF2E0'
 };
@@ -141,7 +141,7 @@ class ProjectSection extends React.Component {
 
     return (
     <div className = "container-fluid" style = {projectSectionStyle}>
-      <p id='projects'>ProjectSection</p>
+      <p style ={headings.headingStyle} id='projects'>Projects i've worked on</p>
       <div className="row row-eq-height" >
         {items}
       </div>
