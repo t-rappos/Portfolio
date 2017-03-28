@@ -10,7 +10,9 @@ transition: 'background-color 0.2s ease',
 //backgroundColor: '#AFE4C1',
 width: '250px',
 height: '250px',
-padding: '10px'
+padding: '10px',
+marginLeft:'auto',
+marginRight:'auto'
 };
 
 const clickStyleHover = {
@@ -20,7 +22,9 @@ const clickStyleHover = {
  backgroundColor: '#FFE4C1',
  width: '250px',
  height: '250px',
- padding: '10px'
+ padding: '10px',
+ marginLeft:'auto',
+ marginRight:'auto'
 };
 
 const tagStyle = {

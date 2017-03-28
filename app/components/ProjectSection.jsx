@@ -113,7 +113,7 @@ const PROJECT_DEFINITIONS = [
    tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
     text:'', category: 'web'}];
 
-const gridName = "col-lg-3 col-md-5 col-sm-5 col-xs-12";
+const gridName = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
 
 class ProjectSection extends React.Component {
   constructor(props){

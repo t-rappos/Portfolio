@@ -3,7 +3,10 @@ import React from 'react';
 
 const summaryItemStyle = {
  padding: '10px',
- textAlign: 'center'
+ textAlign: 'center',
+ maxWidth:'300px',
+ marginLeft:'auto',
+ marginRight:'auto'
 };
 
 const summaryImageStyle = {
