@@ -13,7 +13,7 @@ const csLogo = './assets/logo-cs.png';
 const DefaultImage = './assets/logo_nodejs.png';
 
 const PROJECT_DEFINITIONS = [
-{name: 'Auction House System (WIP)',icon:webLogo, image: DefaultImage,
+{name: 'Auction House System (WIP)',icon:webLogo, image: webLogo,
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5'],
     text:'<h3>Aim</h3><p>The purpose of this project is to gain experience using and integrating multiple different software technologies.\
  An auction listing system would be an appropriate candidate as it requires development of user interfaces, server back-ends and database functionality. \
@@ -36,14 +36,23 @@ const PROJECT_DEFINITIONS = [
   <p>See <a href="https://github.com/t-rappos/auction-system/blob/master/doc/chat-server.md">GitHub</a> for more information</p>\
     ', category: 'web'},
 
-{name: 'Andys WP Website',icon:webLogo, image: DefaultImage,
+{name: 'Andys WP Website',icon:webLogo, image: webLogo,
    tags:['Amazon AWS EC2', 'WordPress'],
     text:'<p>A WordPress <a href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
     <p>Currently in maintenance mode (as requested by client) whilst waiting for content to be delivered.</p>', category: 'web'},
 
-{name: 'DSTG Final Year Project, Robotic Teaming',icon:roboticsLogo, image: DefaultImage,
+{name: 'DSTG Final Year Project, Robotic Teaming',icon:roboticsLogo, image: './assets/fyp.png',
    tags:['Turtlebot', 'ubuntu', 'ROS', 'C++', 'PYTHON', 'UAV', 'UGV', 'LiDAR', 'SLAM', 'TCP/UDP', 'matlab'],
-    text:"<h3>Report Abstract:</h3> <p>The ability for robots to position themselves in their surroundings is key to being able to\
+    text:"<h4>Research Question</h4>\
+    <p>How to implement high-throughput data transmission between an unmanned aerial vehicle (UAV)\
+and an unmanned ground vehicle (UGV), dealing with indoor and urban environmental factors.</p>\
+    <h4>Aims</h4>\
+      <ul>\
+        <li>To understand the effects of an indoor urban environmental noise on data transmission.</li>\
+        <li>To observe the effects of intermittent data on the performance of SLAM algorithms.</li>\
+        <li>To implement effective data transmission and calculate SLAM algorithms off-board in real-time.</li>\
+      </ul>\
+    <h4>Report Abstract:</h4> <p>The ability for robots to position themselves in their surroundings is key to being able to\
  autonomously move and interact with its environment. Issues arise when a robot isn’t powerful enough to complete this task,\
  such as lightweight micro unmanned aerial vehicles (UAV), thus off-boarding simultaneous localisation and mapping (SLAM)\
  calculations to a more powerful nearby robot can alleviate this. In real-world applications, wireless networking issues\
@@ -62,7 +71,7 @@ const PROJECT_DEFINITIONS = [
    Due to this small size, a high degree of accuracy and repeatability is required.\
 <p>The full report can be viewed at <a href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics'},
 
-{name: 'DSTG Div3D, Defect Data Visualiser',icon:csLogo, image: DefaultImage,
+{name: 'DSTG Div3D, Defect Data Visualiser',icon:csLogo, image: "./assets/ibl.png",
    tags:['ParaView', 'C++', 'python', 'trac', 'git', 'MySql', 'NASTRAN', 'CMake', 'QT'],
  text:"<h3>Industry Based Learning, DIV3d Project @ DSTGroup</h3>\
 <p>The Defence Science and Technology Group is the Australian government's lead agency responsible for applying science and technology to safeguard Australia and\
@@ -93,19 +102,22 @@ const PROJECT_DEFINITIONS = [
 <li><strong>Project Management:</strong> Experience with tools such as CMAKE and GIT have allowed me to manage software projects with more effectiveness.</li>\
 </ul>", category: 'software'},
 
-{name: 'Current-C, Currency Conversion Android App',icon:csLogo, image: DefaultImage,
+{name: 'Current-C, Currency Conversion Android App',icon:csLogo, image: "./assets/currency.png",
    tags:['Gradle', 'Java', 'Android Studio', 'external API'],
-    text:'', category: 'software'},
+    text:'<h4>Vision Statement</h4>\
+    <p>For lazy travellers who want a quick and easy way to find currency conversion rates. \
+    “CurrentC” is an android application that uses the cloud to find the latest exchange rates. \
+    Unlike our website competitors, our product is free to use and doesn’t have any advertising.</p>', category: 'software'},
 
-{name: 'File Sharing App',icon:csLogo, image: DefaultImage,
+{name: 'File Sharing App',icon:csLogo, image: csLogo,
    tags:['Java', 'TCP'],
     text:'', category: 'software'},
 
-{name: 'Sliding Puzzle Solver',icon:csLogo, image: DefaultImage,
+{name: 'Sliding Puzzle Solver',icon:csLogo, image: csLogo,
    tags:['C++', 'ASTAR', 'STL'],
    text:'', category: 'software'},
 
-{name: 'Pick and Place robot',icon:roboticsLogo, image: DefaultImage,
+{name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
    tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
     text:'', category: 'robotics'},
 

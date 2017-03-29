@@ -14,7 +14,8 @@ const projectTagStyle = {
 };
 
 const imageStyle = {
-  width: '100%'
+  width: 'auto',
+  maxWidth: '90%'
 };
 
 const leftButtonStyle = {
