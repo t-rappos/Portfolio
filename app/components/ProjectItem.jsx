@@ -46,9 +46,14 @@ class ProjectItem extends React.Component {
   constructor(props){
     super(props);
     this.state = {showModal: false};
+    //if (this.props.forceDisplay){
+    //  this.state = {showModal: true} ;
+    //  console.log("force Display for", this.props.index);
+    //}
   }
   close() {
     this.setState({ showModal: false });
+    this.props.showOtherModal(-1);
   }
   open() {
     this.setState({ showModal: true });
@@ -58,6 +63,14 @@ class ProjectItem extends React.Component {
   }
   onMouseLeave(e){
     this.setState({hover: false});
+  }
+  onPrevPressed(e){
+    this.props.showOtherModal(this.props.index-1);
+    this.setState({ showModal: false });
+  }
+  onNextPressed(e){
+    this.props.showOtherModal(this.props.index+1);
+    this.setState({ showModal: false });
   }
 
   render() {
@@ -71,7 +84,7 @@ class ProjectItem extends React.Component {
         <p><strong>{this.props.name}</strong></p>
         <p style={tagStyle} >{this.props.tags.join(", ")}</p>
 
-        <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
+        <Modal show={this.state.showModal || this.props.forceDisplay} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
             <Modal.Title>{this.props.name} ({this.props.category})</Modal.Title>
           </Modal.Header>
@@ -81,7 +94,9 @@ class ProjectItem extends React.Component {
                 image = {this.props.image}
                 text = {this.props.text}
                 category = {this.props.category}
-                tags = {this.props.tags}/>
+                tags = {this.props.tags}
+                prevPressed = {this.onPrevPressed.bind(this)}
+                nextPressed = {this.onNextPressed.bind(this)}/>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.close.bind(this)}>Close</Button>
@@ -91,7 +106,7 @@ class ProjectItem extends React.Component {
     );
   }
 }
-//
+
 ProjectItem.propTypes = {
   name: React.PropTypes.string.isRequired,
   icon: React.PropTypes.string.isRequired,
@@ -99,6 +114,9 @@ ProjectItem.propTypes = {
   text: React.PropTypes.string.isRequired,
   category: React.PropTypes.string.isRequired,
   toDisplay: React.PropTypes.string.isRequired,
-  tags:React.PropTypes.array.isRequired
+  tags:React.PropTypes.array.isRequired,
+  index: React.PropTypes.number.isRequired,
+  showOtherModal: React.PropTypes.func.isRequired,
+  forceDisplay : React.PropTypes.bool.isRequired
 };
 module.exports = ProjectItem;

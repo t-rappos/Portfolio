@@ -118,23 +118,33 @@ const gridName = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
 class ProjectSection extends React.Component {
   constructor(props){
     super(props);
+    this.state = {forceShow:-1};
+  }
+
+  onShowOtherModal(index){
+    this.setState({forceShow:index});
   }
 
   render() {
     //TODO: we could send a 'project' object instead of all the parameters...
     let keyNo = 0;
     let items = PROJECT_DEFINITIONS.map((project)=>{
+      let forceDisplay = this.state.forceShow == (keyNo);
       return(
         <div key = {keyNo} className={gridName}>
           <ProjectItem
-            key = {keyNo++}
+            key = {keyNo}
             name={project.name}
             icon={project.icon}
             image={project.image}
             tags={project.tags}
             category = {project.category}
             toDisplay = 'true'
-            text={project.text}/>
+            text={project.text}
+            index = {keyNo++}
+            showOtherModal = {this.onShowOtherModal.bind(this)}
+            forceDisplay = {forceDisplay}
+            />
         </div>
       );
     });
