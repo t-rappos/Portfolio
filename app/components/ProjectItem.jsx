@@ -2,29 +2,20 @@ import React from 'react';
 import Colors from './colors.jsx';
 let ProjectPopup = require('ProjectPopup');
 import { Button,Modal } from 'react-bootstrap';
-import Radium, { Style } from 'radium';
+import Radium from 'radium';
 
-const clickStyle = {
-cursor: 'pointer',
-textAlign: 'center',
-transition: 'background-color 0.2s ease',
-width: '250px',
-height: '250px',
-padding: '10px',
-marginLeft:'auto',
-marginRight:'auto'
-};
-
-const clickStyleHover = {
- cursor: 'pointer',
- textAlign: 'center',
- transition: 'background-color 0.2s ease',
- backgroundColor: Colors.PRIMARY[1],
- width: '250px',
- height: '250px',
- padding: '10px',
- marginLeft:'auto',
- marginRight:'auto'
+const styles = {
+    cursor: 'pointer',
+    textAlign: 'center',
+    transition: 'background-color 0.2s ease',
+    width: '250px',
+    height: '250px',
+    padding: '10px',
+    marginLeft:'auto',
+    marginRight:'auto',
+    ':hover':{
+      backgroundColor: Colors.PRIMARY[1]
+    }
 };
 
 const tagStyle = {
@@ -35,7 +26,6 @@ const tagStyle = {
   textOverflow: 'ellipsis',
 };
 
-
 const iconStyle = {
   maxWidth: '125px',
   padding: '10px'
@@ -45,10 +35,7 @@ class ProjectItem extends React.Component {
   constructor(props){
     super(props);
     this.state = {showModal: false};
-    //if (this.props.forceDisplay){
-    //  this.state = {showModal: true} ;
-    //  console.log("force Display for", this.props.index);
-    //}
+
   }
   close() {
     this.setState({ showModal: false });
@@ -57,16 +44,12 @@ class ProjectItem extends React.Component {
   open() {
     this.setState({ showModal: true });
   }
-  onMouseEnter(e){
-    this.setState({hover: true});
-  }
-  onMouseLeave(e){
-    this.setState({hover: false});
-  }
+
   onPrevPressed(e){
     this.props.showOtherModal(this.props.index-1);
     this.setState({ showModal: false });
   }
+
   onNextPressed(e){
     this.props.showOtherModal(this.props.index+1);
     this.setState({ showModal: false });
@@ -75,17 +58,7 @@ class ProjectItem extends React.Component {
   render() {
     return (
 
-      <div
-        onClick={this.open.bind(this)}
-         style={this.state.hover?clickStyleHover:clickStyle}
-         onMouseEnter= {this.onMouseEnter.bind(this)}
-         onMouseLeave= {this.onMouseLeave.bind(this)}>
-         <Style
-           scopeSelector=".modal-body"
-           rules = {{
-
-           }}
-         />
+      <div onClick={this.open.bind(this)} style={styles}>
         <img style = {iconStyle} src={this.props.icon} alt=''/>
         <p><strong>{this.props.name}</strong></p>
         <p style={tagStyle} >{this.props.tags.join(", ")}</p>

@@ -18,13 +18,10 @@ const landingPageStyle = {
    zIndex: '-1'
 };
 
-//https://cdn.pixabay.com/photo/2016/12/18/21/24/bridge-1916757_960_720.jpg
-//https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg
 class LandingPage extends React.Component {
   onScroll(){
     let s = $(window).scrollTop();
     this.state = {scroll: -(s*0.15)};
-    //this.render();
     $(this.node)[0].style.backgroundPosition =  "0px "+this.state.scroll+"px";
   }
   constructor(props){

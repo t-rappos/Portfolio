@@ -18,10 +18,6 @@ const detailsTextStyle = {
   textOverflow: 'ellipsis'
 };
 
-//const listStyleBulletFix = {
-//  listStylePosition: 'inside'
-//};
-
 class DetailsSection extends React.Component {
   constructor(props){
     super(props);

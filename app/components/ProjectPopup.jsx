@@ -1,5 +1,6 @@
 import React from 'react';
 import Colors from './colors.jsx';
+import Radium from 'radium';
 
 const projectPopupStyle = {
   display: 'flex',
@@ -19,42 +20,26 @@ const imageStyle = {
   maxWidth: '90%'
 };
 
-const leftButtonStyle = {
-
-  cursor: 'pointer',
-  padding: '5px'
-};
-
-const leftButtonHoverStyle = {
-  backgroundColor : Colors.PALE[0],
+const buttonStyle = {
   cursor: 'pointer',
   padding: '5px',
-  transition: 'background-color 0.2s ease'
+  transition: 'background-color 0.2s ease',
+  ':hover':{
+    backgroundColor: Colors.PALE[0]
+  }
 };
 
-const rightButtonStyle = {
-
-  cursor: 'pointer',
-  padding: '5px'
-};
-
-const rightButtonHoverStyle = {
-  backgroundColor : Colors.PALE[0],
-  cursor: 'pointer',
-  padding: '5px',
-  transition: 'background-color 0.2s ease'
-};
-
-const leftNavIconStyle = {
-  maxWidth : '2em',
-  maxHeight : '2em',
-  transform: 'rotate(90deg)'
-};
-
-const rightNavIconStyle = {
-  maxWidth : '2em',
-  maxHeight : '2em',
-  transform: 'rotate(270deg)'
+const navIconStyle = {
+  base:{
+    maxWidth : '2em',
+    maxHeight : '2em'
+  },
+  left:{
+    transform: 'rotate(90deg)'
+  },
+  right:{
+    transform: 'rotate(270deg)'
+  }
 };
 
 const tagSectionStyle = {
@@ -64,44 +49,27 @@ const tagSectionStyle = {
 class ProjectPopup extends React.Component {
   constructor(props){
     super(props);
-    this.state = {hoverLB: false, hoverRB: false};
-  }
-
-  onMouseEnterLB(e){
-    this.setState({hoverLB: true});
-  }
-  onMouseLeaveLB(e){
-    this.setState({hoverLB: false});
-  }
-  onMouseEnterRB(e){
-    this.setState({hoverRB: true});
-  }
-  onMouseLeaveRB(e){
-    this.setState({hoverRB: false});
   }
 
   render() {
     var items = this.props.tags.map((tag)=>{
       return (<span style = {projectTagStyle} key={tag} className="label label-default">{tag}</span>);
     });
+
     return (
       <div >
         <div style = {projectPopupStyle}>
-          <div style = {this.state.hoverLB?leftButtonHoverStyle:leftButtonStyle}
-            onMouseEnter= {this.onMouseEnterLB.bind(this)}
-            onMouseLeave= {this.onMouseLeaveLB.bind(this)}
+          <div key = 'lb' style = {buttonStyle}
             onClick ={this.props.prevPressed.bind(this)}>
-            <img src='./assets/see-more.png' alt='next' style = {leftNavIconStyle}></img>
+            <img src='./assets/see-more.png' alt='next' style = {[navIconStyle.base,navIconStyle.left]}></img>
           </div>
           <div style = {contentStyle}>
             <img style = {imageStyle} src={this.props.image} alt={this.props.name}/>
             <div dangerouslySetInnerHTML={{ __html: this.props.text }} />
           </div>
-          <div style = {this.state.hoverRB?rightButtonHoverStyle:rightButtonStyle}
-            onMouseEnter= {this.onMouseEnterRB.bind(this)}
-            onMouseLeave= {this.onMouseLeaveRB.bind(this)}
+          <div key = 'rb' style = {buttonStyle}
             onClick ={this.props.nextPressed.bind(this)}>
-            <img src='./assets/see-more.png' alt='next' style = {rightNavIconStyle}></img>
+            <img src='./assets/see-more.png' alt='next' style = {[navIconStyle.base,navIconStyle.right]}></img>
           </div>
         </div>
         <div style = {tagSectionStyle}>
@@ -122,4 +90,4 @@ ProjectPopup.propTypes = {
   nextPressed: React.PropTypes.func.isRequired,
 };
 
-module.exports = ProjectPopup;
+module.exports = Radium(ProjectPopup);

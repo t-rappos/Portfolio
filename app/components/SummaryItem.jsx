@@ -18,10 +18,6 @@ class SummaryItem extends React.Component {
   constructor(props){
     super(props);
   }
-  //  <li>
-  //<SummaryItem title='summary'
-  //img='./assets/logo_nodejs.png'
-  // text='this is a summary'/></li>
 
   render() {
     return (
