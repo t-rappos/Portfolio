@@ -25,7 +25,7 @@ const PROJECT_DEFINITIONS = [
  <p>Users can list items (user created) on an online auction website for sale for other users to either buyout or bid on.\
    Items listed can be filtered to highlight interesting items. Once an item is successfully purchased, it is placed in the buyers personal inventory.\
    The user can view their own inventory and inspect each item.</p>\
- <p>This project is currently in development on <a href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web'},
+ <p>This project is currently in development on <a href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web', priority:0},
 
 {name: 'Chat Server',icon:webLogo, image: './assets/chat-server.png',
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5', 'Foundation'],
@@ -37,12 +37,7 @@ const PROJECT_DEFINITIONS = [
 <li>User can see an up-to-date list of messages.</li>\
 <li>Application runs in real-time without needing webpage refreshes.</li></ul>\
   <p>See <a href="https://github.com/t-rappos/auction-system/blob/master/doc/chat-server.md">GitHub</a> for more information</p>\
-    ', category: 'web'},
-
-{name: 'Andys WP Website',icon:webLogo, image: webLogo,
-   tags:['Amazon AWS EC2', 'WordPress'],
-    text:'<p>A WordPress <a href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
-    <p>Currently in maintenance mode (as requested by client) whilst waiting for content to be delivered.</p>', category: 'web'},
+    ', category: 'web', priority:0},
 
 {name: 'DSTG Final Year Project, Robotic Teaming',icon:roboticsLogo, image: './assets/fyp.png',
    tags:['Turtlebot', 'ubuntu', 'ROS', 'C++', 'PYTHON', 'UAV', 'UGV', 'LiDAR', 'SLAM', 'TCP/UDP', 'matlab'],
@@ -65,14 +60,14 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
  The objective of this research, in collaboration with DSTGroup, is to find the necessary communication reliability\
  needed for off-board SLAM calculations. It was discovered that at a nominally expected packet loss of twenty percent,\
  the calculated and actual trajectories of the UAV differ by approximately 0.65m on average. A recovery solution was\
- presented which reduces this to 0.45m.</p> <p>The full report can be supplied on request.</p>", category: 'robotics'},
+ presented which reduces this to 0.45m.</p> <p>The full report can be supplied on request.</p>", category: 'robotics', priority:0},
 
 {name: 'Robotic Arm Hand-Eye co-ordination',icon:roboticsLogo, image: "./assets/hand-eye.png",
    tags:['Matlab', 'OpenGL', 'OpenCV', 'C++', 'ABB robot', 'Python', 'Ubuntu'],
     text:'This project explores the use of a ABB robotic arm used for pick-and-place automation tasks. For dynamic operation and task-completion feed-back, computer vision is incorporated via a web-cam mounted in the work area.\
   More specifically, this project has been completed for an industry client, AME System Pty. Ltd., for automated cavity pin insertion. These pins are 3.5mm wide and are placed in holes between 5 and 9mm apart on a rubber socket.\
    Due to this small size, a high degree of accuracy and repeatability is required.\
-<p>The full report can be viewed at <a href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics'},
+<p>The full report can be viewed at <a href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics', priority:0},
 
 {name: 'DSTG Div3D, Defect Data Visualiser',icon:csLogo, image: "./assets/ibl.png",
    tags:['ParaView', 'C++', 'python', 'trac', 'git', 'MySql', 'NASTRAN', 'CMake', 'QT'],
@@ -103,30 +98,36 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
  Also that the best optimisations are logic based (in contrast to technical optimisations) resulting in changes that require no extra effort to understand and can\
   be easily modified or extended.</li> \
 <li><strong>Project Management:</strong> Experience with tools such as CMAKE and GIT have allowed me to manage software projects with more effectiveness.</li>\
-</ul>", category: 'software'},
+</ul>", category: 'software', priority:0},
+
+{name: 'Portfolio Website',icon:webLogo, image: DefaultImage,
+   tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
+    text:'', category: 'web', priority:0},
+
+{name: 'Andys WP Website',icon:webLogo, image: webLogo,
+   tags:['Amazon AWS EC2', 'WordPress'],
+    text:'<p>A WordPress <a href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
+    <p>Currently in maintenance mode (as requested by client) whilst waiting for content to be delivered.</p>', category: 'web', priority:1},
 
 {name: 'Current-C, Currency Conversion Android App',icon:csLogo, image: "./assets/currency.png",
    tags:['Gradle', 'Java', 'Android Studio', 'external API'],
     text:'<h4>Vision Statement</h4>\
     <p>For lazy travellers who want a quick and easy way to find currency conversion rates. \
     “CurrentC” is an android application that uses the cloud to find the latest exchange rates. \
-    Unlike our website competitors, our product is free to use and doesn’t have any advertising.</p>', category: 'software'},
+    Unlike our website competitors, our product is free to use and doesn’t have any advertising.</p>', category: 'software',priority:1},
+
+{name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
+       tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
+        text:'', category: 'robotics',priority:1},
 
 {name: 'File Sharing App',icon:csLogo, image: csLogo,
    tags:['Java', 'TCP'],
-    text:'', category: 'software'},
+    text:'', category: 'software',priority:2},
 
 {name: 'Sliding Puzzle Solver',icon:csLogo, image: csLogo,
    tags:['C++', 'ASTAR', 'STL'],
-   text:'', category: 'software'},
-
-{name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
-   tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
-    text:'', category: 'robotics'},
-
-{name: 'Portfolio Website',icon:webLogo, image: DefaultImage,
-   tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
-    text:'', category: 'web'}];
+   text:'', category: 'software',priority:2}
+];
 
 const gridName = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
 
@@ -159,6 +160,7 @@ class ProjectSection extends React.Component {
             index = {keyNo++}
             showOtherModal = {this.onShowOtherModal.bind(this)}
             forceDisplay = {forceDisplay}
+            priority = {project.priority}
             />
         </div>
       );

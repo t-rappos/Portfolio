@@ -27,8 +27,23 @@ const tagStyle = {
 };
 
 const iconStyle = {
-  maxWidth: '125px',
-  padding: '10px'
+  base:{
+    maxWidth: '125px',
+    padding: '10px'
+  },
+  priority : [    {
+      'WebkitFilter': 'opacity(100%)',
+      filter: 'opacity(100%)'
+    },
+    {
+      'WebkitFilter': 'opacity(70%)',
+      filter: 'opacity(70%)'
+    },
+    {
+      'WebkitFilter': 'opacity(30%)',
+      filter: 'opacity(30%)'
+    }
+]
 };
 
 class ProjectItem extends React.Component {
@@ -59,7 +74,7 @@ class ProjectItem extends React.Component {
     return (
 
       <div onClick={this.open.bind(this)} style={styles}>
-        <img style = {iconStyle} src={this.props.icon} alt=''/>
+        <img style = {[iconStyle.base,iconStyle.priority[this.props.priority]]} src={this.props.icon} alt=''/>
         <p><strong>{this.props.name}</strong></p>
         <p style={tagStyle} >{this.props.tags.join(", ")}</p>
 
@@ -96,6 +111,7 @@ ProjectItem.propTypes = {
   tags:React.PropTypes.array.isRequired,
   index: React.PropTypes.number.isRequired,
   showOtherModal: React.PropTypes.func.isRequired,
-  forceDisplay : React.PropTypes.bool.isRequired
+  forceDisplay : React.PropTypes.bool.isRequired,
+  priority : React.PropTypes.number.isRequired
 };
 module.exports = Radium(ProjectItem);
