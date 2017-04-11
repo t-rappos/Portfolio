@@ -2,6 +2,7 @@ import React from 'react';
 import Colors from './colors.jsx';
 let ProjectPopup = require('ProjectPopup');
 import { Button,Modal } from 'react-bootstrap';
+import Radium, { Style } from 'radium';
 
 const clickStyle = {
 cursor: 'pointer',
@@ -40,7 +41,6 @@ const iconStyle = {
   padding: '10px'
 };
 
-
 class ProjectItem extends React.Component {
   constructor(props){
     super(props);
@@ -74,11 +74,18 @@ class ProjectItem extends React.Component {
 
   render() {
     return (
+
       <div
         onClick={this.open.bind(this)}
          style={this.state.hover?clickStyleHover:clickStyle}
          onMouseEnter= {this.onMouseEnter.bind(this)}
          onMouseLeave= {this.onMouseLeave.bind(this)}>
+         <Style
+           scopeSelector=".modal-body"
+           rules = {{
+
+           }}
+         />
         <img style = {iconStyle} src={this.props.icon} alt=''/>
         <p><strong>{this.props.name}</strong></p>
         <p style={tagStyle} >{this.props.tags.join(", ")}</p>
@@ -118,4 +125,4 @@ ProjectItem.propTypes = {
   showOtherModal: React.PropTypes.func.isRequired,
   forceDisplay : React.PropTypes.bool.isRequired
 };
-module.exports = ProjectItem;
+module.exports = Radium(ProjectItem);
