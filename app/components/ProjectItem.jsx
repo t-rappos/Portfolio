@@ -1,5 +1,5 @@
 import React from 'react';
-import Colors from './colors.jsx';
+//import Colors from './colors.jsx';
 let ProjectPopup = require('ProjectPopup');
 import { Button,Modal } from 'react-bootstrap';
 import Radium from 'radium';
@@ -7,23 +7,43 @@ import Radium from 'radium';
 const styles = {
     cursor: 'pointer',
     textAlign: 'center',
-    transition: 'background-color 0.2s ease',
     width: '250px',
     height: '250px',
     padding: '10px',
     marginLeft:'auto',
-    marginRight:'auto',
-    ':hover':{
-      backgroundColor: Colors.PRIMARY[1]
-    }
+    marginRight:'auto'
 };
 
 const tagStyle = {
-  textAlign: 'justify',
-  textAlignLast: 'center',
-  fontSize: '90%',
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
+  base:{
+    textAlign: 'justify',
+    textAlignLast: 'center',
+    fontSize: '90%',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    transition: 'color 0.3s ease',
+    color: 'rgba(0, 0, 0, 0.0)'
+  },
+  hover:{
+    color: 'rgba(0, 0, 0, 0.99)'
+  }
+};
+
+
+//'WebkitFilter': 'blur(5px)',
+//filter: 'blur(5px)',
+//transition: '-webkit-filter 0.3s ease, filter 0.3s ease',
+
+const iconBlurStyle = {
+  base:{
+    transition: '-webkit-filter 0.3s ease, filter 0.3s ease',
+    'WebkitFilter': 'blur(2px)',
+    filter: 'blur(2px)'
+  },
+  hover:{
+    'WebkitFilter': 'blur(0px)',
+    filter: 'blur(0px)'
+  }
 };
 
 const iconStyle = {
@@ -70,33 +90,46 @@ class ProjectItem extends React.Component {
     this.setState({ showModal: false });
   }
 
+  onMouseEnter(e){
+    this.setState({hover: true});
+  }
+
+  onMouseLeave(e){
+    this.setState({hover: false});
+  }
+
   render() {
     return (
+        <div key = 'a'
+          onClick={this.open.bind(this)}
+          onMouseEnter= {this.onMouseEnter.bind(this)}
+          onMouseLeave= {this.onMouseLeave.bind(this)}
+          style={styles}>
+          <div style = {[iconBlurStyle.base, this.state.hover && iconBlurStyle.hover]}>
+            <img style = {[iconStyle.base,iconStyle.priority[this.props.priority], this.state.hover && iconStyle.hover]} src={this.props.icon} alt=''/>
+          </div>
+          <p><strong>{this.props.name}</strong></p>
+          <p key = 'b' style={[tagStyle.base, this.state.hover && tagStyle.hover]} >{this.props.tags.join(", ")}</p>
 
-      <div onClick={this.open.bind(this)} style={styles}>
-        <img style = {[iconStyle.base,iconStyle.priority[this.props.priority]]} src={this.props.icon} alt=''/>
-        <p><strong>{this.props.name}</strong></p>
-        <p style={tagStyle} >{this.props.tags.join(", ")}</p>
-
-        <Modal show={this.state.showModal || this.props.forceDisplay} onHide={this.close.bind(this)}>
-          <Modal.Header closeButton>
-            <Modal.Title>{this.props.name} ({this.props.category})</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-              <ProjectPopup
-                name = {this.props.name}
-                image = {this.props.image}
-                text = {this.props.text}
-                category = {this.props.category}
-                tags = {this.props.tags}
-                prevPressed = {this.onPrevPressed.bind(this)}
-                nextPressed = {this.onNextPressed.bind(this)}/>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.close.bind(this)}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+          <Modal show={this.state.showModal || this.props.forceDisplay} onHide={this.close.bind(this)}>
+            <Modal.Header closeButton>
+              <Modal.Title>{this.props.name} ({this.props.category})</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <ProjectPopup
+                  name = {this.props.name}
+                  image = {this.props.image}
+                  text = {this.props.text}
+                  category = {this.props.category}
+                  tags = {this.props.tags}
+                  prevPressed = {this.onPrevPressed.bind(this)}
+                  nextPressed = {this.onNextPressed.bind(this)}/>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.close.bind(this)}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        </div>
     );
   }
 }
