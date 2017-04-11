@@ -1,9 +1,10 @@
 import React from 'react';
 let SummaryItem = require('SummaryItem');
 let headings = require('./headings.jsx');
+import Colors from './colors.jsx';
 
 const summarySectionStyle = {
-  backgroundColor: '#FFE4C1'
+  backgroundColor: Colors.PRIMARY[1]
 };
 
 const gridName = "col-lg-4 col-md-4 col-sm-12 col-xs-12";

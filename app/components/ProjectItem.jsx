@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Colors from './colors.jsx';
 let ProjectPopup = require('ProjectPopup');
 import { Button,Modal } from 'react-bootstrap';
 
@@ -7,7 +7,6 @@ const clickStyle = {
 cursor: 'pointer',
 textAlign: 'center',
 transition: 'background-color 0.2s ease',
-//backgroundColor: '#AFE4C1',
 width: '250px',
 height: '250px',
 padding: '10px',
@@ -19,7 +18,7 @@ const clickStyleHover = {
  cursor: 'pointer',
  textAlign: 'center',
  transition: 'background-color 0.2s ease',
- backgroundColor: '#FFE4C1',
+ backgroundColor: Colors.PRIMARY[1],
  width: '250px',
  height: '250px',
  padding: '10px',

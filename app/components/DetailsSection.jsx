@@ -1,9 +1,10 @@
 import React from 'react';
 import {  MarkdownPreview  } from 'react-marked-markdown';
 let headings = require('./headings.jsx');
+import Colors from './colors.jsx';
 
 const detailsSectionStyle = {
-  backgroundColor: '#FFE4C1',
+  backgroundColor: Colors.PRIMARY[1],
   marginTop : '-20px',
   marginLeft : 'auto',
   marginRight : 'auto'

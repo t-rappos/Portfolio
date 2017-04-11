@@ -1,4 +1,5 @@
 import React from 'react';
+import Colors from './colors.jsx';
 
 const projectPopupStyle = {
   display: 'flex',
@@ -25,7 +26,7 @@ const leftButtonStyle = {
 };
 
 const leftButtonHoverStyle = {
-  backgroundColor : '#eaeff7',
+  backgroundColor : Colors.PALE[0],
   cursor: 'pointer',
   padding: '5px',
   transition: 'background-color 0.2s ease'
@@ -38,7 +39,7 @@ const rightButtonStyle = {
 };
 
 const rightButtonHoverStyle = {
-  backgroundColor : '#eaeff7',
+  backgroundColor : Colors.PALE[0],
   cursor: 'pointer',
   padding: '5px',
   transition: 'background-color 0.2s ease'

@@ -1,8 +1,11 @@
 import React from 'react';
 let ProjectItem = require('ProjectItem');
 let headings = require('./headings.jsx');
+import Colors from './colors.jsx';
+
+
 const projectSectionStyle = {
-  backgroundColor: '#FFF2E0'
+  backgroundColor: Colors.PRIMARY[0]
 };
 
 const roboticsLogo = './assets/logo-robotics2.png';

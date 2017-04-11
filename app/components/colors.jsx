@@ -14,6 +14,10 @@ const COMPLIMENT = [
   '#24455F'
 ];
 
-export.modules = {PRIMARY, COMPLIMENT};
+const PALE = [
+  '#eaeff7'
+];
+
+module.exports = {PRIMARY, COMPLIMENT, PALE};
 
 //TODO: make this into a css module
