@@ -103,7 +103,7 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 
 {name: 'Portfolio Website',icon:webLogo, image: DefaultImage,
    tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
-    text:'', category: 'web', priority:0},
+    text:"<p>This portfolio website was created to showcase various projects that i've worked on.</p><a href='https://github.com/t-rappos/Portfolio/'>See github for more information.</a>", category: 'web', priority:0},
 
 {name: 'Andy Rappos WordPress Website',icon:webLogo, image: webLogo,
    tags:['Amazon AWS EC2', 'WordPress'],
