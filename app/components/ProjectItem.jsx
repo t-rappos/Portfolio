@@ -46,16 +46,13 @@ const iconStyle = {
     padding: '10px'
   },
   priority : [    {
-      'WebkitFilter': 'opacity(100%)',
-      filter: 'opacity(100%)'
+
     },
     {
-      'WebkitFilter': 'opacity(70%)',
-      filter: 'opacity(70%)'
+
     },
     {
-      'WebkitFilter': 'opacity(30%)',
-      filter: 'opacity(30%)'
+
     }
 ]
 };
