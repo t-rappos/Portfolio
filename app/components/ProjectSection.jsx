@@ -104,7 +104,7 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
    tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
     text:'', category: 'web', priority:0},
 
-{name: 'Andys WP Website',icon:webLogo, image: webLogo,
+{name: 'Andy Rappos WordPress Website',icon:webLogo, image: webLogo,
    tags:['Amazon AWS EC2', 'WordPress'],
     text:'<p>A WordPress <a href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
     <p>Currently in maintenance mode (as requested by client) whilst waiting for content to be delivered.</p>', category: 'web', priority:1},
