@@ -39,7 +39,7 @@ const PROJECT_DEFINITIONS = [
   <p>See <a href="https://github.com/t-rappos/auction-system/blob/master/doc/chat-server.md">GitHub</a> for more information</p>\
     ', category: 'web', priority:0},
 
-{name: 'DSTG Final Year Project, Robotic Teaming',icon:roboticsLogo, image: './assets/fyp.png',
+{name: 'DST Group Final Year Project, Robotic Teaming',icon:roboticsLogo, image: './assets/fyp.png',
    tags:['Turtlebot', 'ubuntu', 'ROS', 'C++', 'PYTHON', 'UAV', 'UGV', 'LiDAR', 'SLAM', 'TCP/UDP', 'matlab'],
     text:"<h4>Research Question</h4>\
     <p>How to implement high-throughput data transmission between an unmanned aerial vehicle (UAV)\
@@ -57,7 +57,7 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
  may cause communication packet-loss between robots, affecting the calculation of the map and localisation.\
  This phenomenon was analysed using a UAV and UGV (unmanned ground vehicle), utilising robotic teaming.\
  LiDAR laser scan data was sent from the UAV to the UGV via WiFi, which then produced a map of its local environment.\
- The objective of this research, in collaboration with DSTGroup, is to find the necessary communication reliability\
+ The objective of this research, in collaboration with DST Group, is to find the necessary communication reliability\
  needed for off-board SLAM calculations. It was discovered that at a nominally expected packet loss of twenty percent,\
  the calculated and actual trajectories of the UAV differ by approximately 0.65m on average. A recovery solution was\
  presented which reduces this to 0.45m.</p> <p>The full report can be supplied on request.</p>", category: 'robotics', priority:0},
@@ -69,9 +69,9 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
    Due to this small size, a high degree of accuracy and repeatability is required.\
 <p>The full report can be viewed at <a href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics', priority:0},
 
-{name: 'DSTG Div3D, Defect Data Visualiser',icon:csLogo, image: "./assets/ibl.png",
+{name: 'DST Group Div3D, Defect Data Visualiser',icon:csLogo, image: "./assets/ibl.png",
    tags:['ParaView', 'C++', 'python', 'trac', 'git', 'MySql', 'NASTRAN', 'CMake', 'QT'],
- text:"<h3>Industry Based Learning, DIV3d Project @ DSTGroup</h3>\
+ text:"<h3>Industry Based Learning, DIV3d Project @ DST Group</h3>\
 <p>The Defence Science and Technology Group is the Australian government's lead agency responsible for applying science and technology to safeguard Australia and\
  its national interests. DST Group consists of multiple\
  divisions which are further split into branches. I was placed in the Aircraft Structures Branch of the Aerospace Division under the guidance of my supervisor.\

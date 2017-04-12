@@ -1,5 +1,4 @@
 import React from 'react';
-//import Colors from './colors.jsx';
 let ProjectPopup = require('ProjectPopup');
 import { Button,Modal } from 'react-bootstrap';
 import Radium from 'radium';
@@ -28,11 +27,6 @@ const tagStyle = {
     color: 'rgba(0, 0, 0, 0.99)'
   }
 };
-
-
-//'WebkitFilter': 'blur(5px)',
-//filter: 'blur(5px)',
-//transition: '-webkit-filter 0.3s ease, filter 0.3s ease',
 
 const iconBlurStyle = {
   base:{
