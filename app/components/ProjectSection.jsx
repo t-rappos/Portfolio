@@ -112,10 +112,13 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 
 {name: 'Current-C, Currency Conversion Android App',icon:csLogo, image: "./assets/currency.png",
    tags:['Gradle', 'Java', 'Android Studio', 'external API'],
-    text:'<h4>Vision Statement</h4>\
-    <p>For lazy travellers who want a quick and easy way to find currency conversion rates. \
-    “CurrentC” is an android application that uses the cloud to find the latest exchange rates. \
-    Unlike our website competitors, our product is free to use and doesn’t have any advertising.</p>', category: 'software',priority:1},
+    text:'<h4>Functionality</h4>\
+    <ul>\
+      <li>Convert currency amounts using standard ISO currency codes</li>\
+      <li>Save commonly used currency conversions and view in a list</li>\
+      <li>Add a new custom currency to use</li>\
+      <li>View a list of currency rates</li>\
+    </ul>', category: 'software',priority:1},
 
 {name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
        tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
