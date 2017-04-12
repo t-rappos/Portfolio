@@ -122,7 +122,16 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 
 {name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
        tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
-        text:'', category: 'robotics',priority:1}
+        text:'<h4>Task</h4><p>To create a robotic arm that will pick up metal objects and place them in a basket quickly.</p>\
+        <h4>Functionality</h4>\
+        <ul>\
+          <li>Design and construction of arm mechanism.</li>\
+          <li>Construction of automated object feeder, to allow arm to pick up objects automatically.</li>\
+          <li>Design of electrical circuits for signal conditioning (low pass filter) and power regulation.</li>\
+          <li>System identification using Matlab to determine a transfer function model where\
+             the voltage to the motor is the input and the position of the beam (in degrees) is the output.</li>\
+          <li>Implement PID feedback controller on the microcontroller.</li>\
+        </ul>', category: 'robotics',priority:1}
 ];
 
 const gridName = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
