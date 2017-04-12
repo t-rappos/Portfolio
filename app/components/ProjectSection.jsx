@@ -122,15 +122,7 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 
 {name: 'Pick and Place robot',icon:roboticsLogo, image: "./assets/pnp.png",
        tags:['C', 'PID', 'HCS12 uController', 'Code Warrior', 'Servo', 'Solenoid', 'matlab', 'solidworks'],
-        text:'', category: 'robotics',priority:1},
-
-{name: 'File Sharing App',icon:csLogo, image: csLogo,
-   tags:['Java', 'TCP'],
-    text:'', category: 'software',priority:2},
-
-{name: 'Sliding Puzzle Solver',icon:csLogo, image: csLogo,
-   tags:['C++', 'ASTAR', 'STL'],
-   text:'', category: 'software',priority:2}
+        text:'', category: 'robotics',priority:1}
 ];
 
 const gridName = "col-lg-3 col-md-4 col-sm-6 col-xs-12";
