@@ -74,11 +74,12 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
  text:"<h3>Industry Based Learning, DIV3d Project @ DST Group</h3>\
 <p>The Defence Science and Technology Group is the Australian government's lead agency responsible for applying science and technology to safeguard Australia and\
  its national interests. DST Group consists of multiple\
- divisions which are further split into branches. I was placed in the Aircraft Structures Branch of the Aerospace Division under the guidance of my supervisor.\
-  My role at DST Group consisted of analysing ‘Paraview’, an open source 3D graphics API, to evaluate possible solutions for implementing desired functionality into ‘Div3D’ while being guided by software requirements and specifications.\
-  Div3D is a 3D visualisation program that would be used to display vehicle defect data-points ontop of finite element analysis vehicle models.</p> \
+ divisions which are further split into branches. I was placed in the Aircraft Structures Branch of the Aerospace Division.\
+  My role at DST Group consisted of developing a 3D visualisation product, DIV3D, by extending and configuring an existing\
+   open source scientific visualisation tool named ParaView, based on VTK. Div3D would be used to display vehicle defect\
+    data-points on top of finite element analysis vehicle models.</p> \
 \
-<p>The following is a list of the paraview C++ plugins that were developed during this period of work.</p>\
+<p>The following is a list of the paraview C++ plugins that were developed during this period of work to meet DIV3D requirements.</p>\
 <ul>\
 <li><strong>Nastran Reader:</strong>	Loads and displays Nastran finite element analysis .bulk files</li>\
 <li><strong>IMSST Reader:</strong>	Loads and displays geometry from an external MYSQL database</li>\
@@ -93,11 +94,11 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 <p><strong>Skills used:</strong><p>\
 <ul>\
 <li><strong>Software architecture and extensibility:</strong> Experience was gained by developing plugins, having to design an overall project structure to enable sharing common\
- functionality throughout all plugins.</li>\
+ functionality throughout all plugins using existing best practices.</li>\
 <li><strong>Optimisation:</strong> By developing the NASTRAN reader plugin whilst trying to reduce load times. Discovered that premature optimisations are not time or cost effective.\
  Also that the best optimisations are logic based (in contrast to technical optimisations) resulting in changes that require no extra effort to understand and can\
   be easily modified or extended.</li> \
-<li><strong>Project Management:</strong> Experience with tools such as CMAKE and GIT have allowed me to manage software projects with more effectiveness.</li>\
+<li><strong>Project Management:</strong> Experience with tools such as CMAKE and GIT.</li>\
 </ul>", category: 'software', priority:0},
 
 {name: 'Portfolio Website',icon:webLogo, image: DefaultImage,
