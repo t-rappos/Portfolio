@@ -37,7 +37,7 @@
     "react-dom": "^15.4.2",
     "react-marked": "^0.3.1",
     "react-marked-markdown": "^1.4.2",
-    "react-router": "^2.0.0"
+    "react-router": "^2.0.0",
 	"webpack": "^1.14.0"
   },
   "devDependencies": {
@@ -75,7 +75,6 @@
     "rimraf": "^2.5.4",
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.8",
-    
+    "url-loader": "^0.5.8"
   }
 }
