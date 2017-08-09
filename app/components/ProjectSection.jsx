@@ -16,11 +16,12 @@ const csLogo = './assets/logo-cs.png';
 const DefaultImage = './assets/logo_nodejs.png';
 
 const PROJECT_DEFINITIONS = [
-{name: 'Auction House System (WIP)',icon:webLogo, image: webLogo,
+{name: 'Auction House System (WIP)',icon:webLogo, image: './assets/auction-house.png',
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5'],
     text:'<h3>Aim</h3><p>The purpose of this project is to gain experience using and integrating multiple different software technologies.\
  An auction listing system would be an appropriate candidate as it requires development of user interfaces, server back-ends and database functionality. \
  This project will be set up for multiple collaborators but will be a single developer effort.</p>\
+ It was also successfully deployed on <a href = "https://t-rappos-auction-house.herokuapp.com">Heroku</a>\
  <h3>About</h3>\
  <p>Users can list items (user created) on an online auction website for sale for other users to either buyout or bid on.\
    Items listed can be filtered to highlight interesting items. Once an item is successfully purchased, it is placed in the buyers personal inventory.\
