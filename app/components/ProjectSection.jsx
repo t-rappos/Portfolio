@@ -16,7 +16,106 @@ const csLogo = './assets/logo-cs.png';
 const DefaultImage = './assets/logo_nodejs.png';
 
 const PROJECT_DEFINITIONS = [
-{name: 'Auction House System (WIP)',icon:webLogo, image: './assets/auction-house.png',
+
+  {name: 'Playlister',icon:webLogo, image: './assets/playlister.png',
+  tags:['Heroku','Create-React-App', 'CSS', 'HTML5', 'Semantic', 'Redux', 'React-Router', 'Passport', "User Login", 'React','REST API', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Java', 'Maven', 'Gradle', 'Android Studio'],
+   text:
+   `
+   <a href='https://thawing-atoll-11089.herokuapp.com/'>Check it out.</a>
+   <h3>Aim:</h3>
+   <p>The purpose of this project is to gain experience using and integrating multiple different software technologies. A music management system would be an appropriate candidate as it requires development of a web user interface, server back-end with database functionality and device clients applications.</p>
+   
+   <h3>Pitch:</h3>
+   <p>'One convenient location to access all your music',
+   Having to find all your music files to make playlists can be a pain. With ‘Playlister’, you can access your music from anywhere and make playlists where you like, when you like. ‘Playlister’ finds music on all your devices and allows you to make and arrange playlists from anywhere via the cloud.</p>
+   
+   <p>'Listen and watch music videos of your favorite music',
+   Music tracks are played back sequentially as music videos on YouTube. Access and play all your music from anywhere.</p>
+   
+   <h3>Features:</h3>
+   <ul>
+   <li>PC & Mobile app scans your device for music.</li>
+   <li>Playback tracks on the Playlister website via YouTube.</li>
+   <li>Search for your music and view lists of music in the folder explorer view.</li>
+   <li>Label and sort your music into playlists.</li>
+   <li>See which devices your tracks and stored on.</li>
+   </ul>
+   
+   <h3>Website Specifications:</h3>
+   <ul>
+   <li>Responsive and Fluid UI for mobile and PC browsers.</li>
+   <li>React w/ ES6 using Semantic as CSS framework.</li>
+   <li>User login & registration.</li>
+   <li>Tour introduction.</li>
+   <li>Embedded YouTube player for tracks.</li>
+   <li>Redux and React-Router to manage state and history.</li>
+   </ul>
+   
+   <h3>Server Specification:</h3>
+   <ul>
+   <li>REST API for website and device apps.</li>
+   <li>NodeJS ES6 server, with service worker (Progressive Web App).</li>
+   <li>(Passport) Local/Http authentication for devices and website.</li>
+   <li>Postgres with Sequelize ORM.</li>
+   <li>Utilises YouTube API to automatically search YouTube for relevant videos for uploaded tracks.</li>
+   </ul>
+   
+   <h3>Playlister App Library Specifications:</h3>
+   <ul>
+   <li>Java library for functionality common to both Mobile and PC apps.</li>
+   <li>Sends + Receives data from server.</li>
+   <li>Login / Logout with server.</li>
+   </ul>
+   
+   <h3>Mobile/PC App Specifications:</h3>
+   <ul>
+   <li>Mobile app was developed as a Gradle Android Studio Java project.</li>
+   <li>PC app was developed as a Maven IntelliJ Java project.</li>
+   <li>Read MP3 for ID3 tag details.</li>
+   <li>Scans device for tracks at specified locations.</li>
+   <li>Gui to log in, select scan locations and view scan results.</li>
+   <li>PC app is visible in the system tray.</li>
+   </ul>
+   
+   <p>
+   View the tour, or use username 'tom', password 'rap' to view an operational account. <a href='https://thawing-atoll-11089.herokuapp.com/'>Check it out</a>
+   </p>
+   
+   <p>
+   GitHub pages for code:
+   <a href='https://github.com/t-rappos/playlister-website'>Website & Server<a/>
+   <a href='https://github.com/t-rappos/playlister-android'>Mobile App<a/>
+   <a href='https://github.com/t-rappos/playlister-pc'>Pc App<a/>
+   </p>
+   `
+   , category: 'web', priority:0},
+
+
+  {name: 'Location Based System using LoRa',icon:roboticsLogo, image: './assets/ltd.png',
+  tags:['C++', 'Embedded', 'SodaqOne', 'GPS', 'LoRA', 'Slack', 'IoT', 'MQTT'],
+   text:'<p>In the context of this project, the Lora Test Devices (LTDs) were implemented to investigate the medium of LoRa data communication.\
+Specifically, to compare onboard GPS tracking against a novel LoRa triangulation methodology.\
+<p>The motivating use case for the LTD has been a general-purpose tracker for use in tracking elderly patients in nursing homes.\
+The LTDs could alert staff if a patient has left the vicinity or fallen over accidently.</p>\
+<p>Features:</p>\
+<ul><li>Obtains data from its internal or externally attached sensors, including GPS data.</li>\
+<li>Sends data to server for storage and further analysis.</li>\
+<li>Receives data from server and acts on data to change internal or externally attached peripherals.</li>\
+</ul>\
+<p>Specifications:</p>\
+<ul><li>SodaqOne microcontroller</li>\
+<li>Software programmed in C++ following embedded core guidelines</li>\
+<li>GPS tracking</li>\
+<li>LoRA data transmission over MQTT</li>\
+<li>Low Power Mode & Watchdog error handling</li>\
+<li>General Purpose interface for analog / digital sensors</li>\
+<li>Automated unit tests using Visual Studio for non-embedded functionality</li>\
+<li>Automated system integration tests for LTD-Server message protocol adherence (Python using Serial interface) </li>\
+</ul>\
+ <p>More information can be provided on request.</p>\
+   ', category: 'robotics', priority:0},
+
+{name: 'Auction House System',icon:webLogo, image: './assets/auction-house.png',
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5'],
     text:'<h3>Aim</h3><p>The purpose of this project is to gain experience using and integrating multiple different software technologies.\
  An auction listing system would be an appropriate candidate as it requires development of user interfaces, server back-ends and database functionality. \
@@ -26,7 +125,7 @@ const PROJECT_DEFINITIONS = [
  <p>Users can list items (user created) on an online auction website for sale for other users to either buyout or bid on.\
    Items listed can be filtered to highlight interesting items. Once an item is successfully purchased, it is placed in the buyers personal inventory.\
    The user can view their own inventory and inspect each item.</p>\
- <p>This project is currently in development on <a href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web', priority:0},
+ <p>This project has finished initial development, the code can be viewed at <a href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web', priority:0},
 
 {name: 'Chat Server',icon:webLogo, image: './assets/chat-server.png',
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5', 'Foundation'],

@@ -28,8 +28,8 @@ class DetailsSection extends React.Component {
     <div style = {detailsSectionStyle}>
       <h2 id='in-detail' style = {headings.headingStyle}>In Detail</h2>
       <div style = {detailsTextStyle}>
-        <p>I'm currently studying a double degree, Bachelor of Engineering (Robotics & Mechatronics)
-          (Honours)/ Bachelor of Computer Science at Swinburne University of Technology.
+        <p>I've recently graduated with a double degree, Bachelor of Engineering (Robotics & Mechatronics)(Honours) with High Distinction
+          & Bachelor of Computer, Science from Swinburne University of Technology.
            I've always had a fascination about how things work and a drive to understand systems
             especially the interaction between mechanics, robotics, electronics and software.</p>
 
@@ -40,8 +40,8 @@ class DetailsSection extends React.Component {
 - React
 - Redux
 - Socket IO
-- Webpack
-- CSS (Foundation, Bootstrap, SCSS)
+- Create-React-App
+- CSS (Foundation, Bootstrap, SCSS, Semantic)
 - HTML5
 "/>
 
@@ -50,18 +50,20 @@ class DetailsSection extends React.Component {
 - Javascript (NodeJS, Express)
 - Java (Spring)
 - SQL (MySQL, PostgreSQL)
+- ORM (Sequelize)
 - NPM
+- User Authorization (Passport)
 "/>
 
 <MarkdownPreview value="
 ### Software Applications
 - Python (SciPy, RenPy, NumPy)
-- CMake (Build configuration)
+- Build configuration (CMake)
 - Git (GitHub, BitBucket, GitLab)
-- Trac
+- Project Management (Trac, Trello)
 - C++ (STL, VTK, QT, ParaView, OpenGL, OpenCV)
 - C#
-- Java (Android Studio, Gradle)
+- Java (Android Studio, Gradle, Maven)
 "/>
 
 <MarkdownPreview value="
