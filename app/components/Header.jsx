@@ -20,7 +20,7 @@ class Header extends React.Component {
         <li><a href="#in-detail">In Detail</a></li>
     </ul>
     <ul className="nav navbar-nav navbar-right">
-      <li><a href="https://github.com/t-rappos/Portfolio/">See Github</a></li>
+      <li><a href="https://github.com/t-rappos/Portfolio/" target="_blank">See Github</a></li>
     </ul>
   </div>
 </nav>

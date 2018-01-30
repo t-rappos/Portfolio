@@ -29,7 +29,7 @@ class DetailsSection extends React.Component {
       <h2 id='in-detail' style = {headings.headingStyle}>In Detail</h2>
       <div style = {detailsTextStyle}>
         <p>I've recently graduated with a double degree, Bachelor of Engineering (Robotics & Mechatronics)(Honours) with High Distinction
-          & Bachelor of Computer, Science from Swinburne University of Technology.
+          & Bachelor of Computer Science from Swinburne University of Technology.
            I've always had a fascination about how things work and a drive to understand systems
             especially the interaction between mechanics, robotics, electronics and software.</p>
 
@@ -95,13 +95,12 @@ class DetailsSection extends React.Component {
 ### Workflow
 "/>
 
-<p>My current workflow is guided by test driven development, supported by unit tests,
+<p>The workflow that I strive for is guided by test driven development, supported by unit tests,
 continuous integration and automated deployment. Following a document-as-you-go (but before development),
 traceable agile approach. I aim to work as transparently as possible by using tools such as Trello,
 and storing working research in visible locations (dropbox, git, google docs).
-The ultimate goal is to be able to stop working on a project and pick it up months later
-and be able to start working straight away.</p>
-        <a href = 'https://github.com/t-rappos/auction-system/blob/master/doc/workflow.md'>See github for a more in-depth explanation</a>
+The goal is to be able to communicate the status of the project via documentation created in development process.</p>
+<a href = 'https://github.com/t-rappos/auction-system/blob/master/doc/workflow.md' target="_blank">See github for a more in-depth explanation</a>
 <br/>
 <br/>
       </div>

@@ -32,7 +32,7 @@ class LandingPage extends React.Component {
   render() {
     return (
     <div style = {landingPageStyle} ref={node => this.node = node} className = 'background'>
-      <h2>Hi, Im Tom and welcome to my portfolio website.</h2>
+      <h2>Hi, I'm Tom and welcome to my portfolio website.</h2>
       <StartIcon/>
     </div>  );
   }

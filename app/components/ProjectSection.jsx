@@ -21,7 +21,7 @@ const PROJECT_DEFINITIONS = [
   tags:['Heroku','Create-React-App', 'CSS', 'HTML5', 'Semantic', 'Redux', 'React-Router', 'Passport', "User Login", 'React','REST API', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Java', 'Maven', 'Gradle', 'Android Studio'],
    text:
    `
-   <a href='https://thawing-atoll-11089.herokuapp.com/'>Check it out.</a>
+   <a href='https://thawing-atoll-11089.herokuapp.com/' target="_blank">Check it out.</a>
    <h3>Aim:</h3>
    <p>The purpose of this project is to gain experience using and integrating multiple different software technologies. A music management system would be an appropriate candidate as it requires development of a web user interface, server back-end with database functionality and device clients applications.</p>
    
@@ -78,14 +78,14 @@ const PROJECT_DEFINITIONS = [
    </ul>
    
    <p>
-   View the tour, or use username 'tom', password 'rap' to view an operational account. <a href='https://thawing-atoll-11089.herokuapp.com/'>Check it out</a>
+   View the tour, or use username 'tom', password 'rap' to view an operational account. <a target="_blank" href='https://thawing-atoll-11089.herokuapp.com/'>Check it out</a>
    </p>
    
    <p>
    GitHub pages for code:
-   <a href='https://github.com/t-rappos/playlister-website'>Website & Server<a/>
-   <a href='https://github.com/t-rappos/playlister-android'>Mobile App<a/>
-   <a href='https://github.com/t-rappos/playlister-pc'>Pc App<a/>
+   <a target="_blank" href='https://github.com/t-rappos/playlister-website'>Website & Server<a/>
+   <a target="_blank" href='https://github.com/t-rappos/playlister-android'>Mobile App<a/>
+   <a target="_blank" href='https://github.com/t-rappos/playlister-pc'>Pc App<a/>
    </p>
    `
    , category: 'web', priority:0},
@@ -120,12 +120,12 @@ The LTDs could alert staff if a patient has left the vicinity or fallen over acc
     text:'<h3>Aim</h3><p>The purpose of this project is to gain experience using and integrating multiple different software technologies.\
  An auction listing system would be an appropriate candidate as it requires development of user interfaces, server back-ends and database functionality. \
  This project will be set up for multiple collaborators but will be a single developer effort.</p>\
- It was also successfully deployed on <a href = "https://t-rappos-auction-house.herokuapp.com">Heroku</a>\
+ It was also successfully deployed on <a target="_blank" href = "https://t-rappos-auction-house.herokuapp.com">Heroku</a>\
  <h3>About</h3>\
  <p>Users can list items (user created) on an online auction website for sale for other users to either buyout or bid on.\
    Items listed can be filtered to highlight interesting items. Once an item is successfully purchased, it is placed in the buyers personal inventory.\
    The user can view their own inventory and inspect each item.</p>\
- <p>This project has finished initial development, the code can be viewed at <a href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web', priority:0},
+ <p>This project has finished initial development, the code can be viewed at <a target="_blank" href="https://github.com/t-rappos/auction-system">GitHub</a></p>', category: 'web', priority:0},
 
 {name: 'Chat Server',icon:webLogo, image: './assets/chat-server.png',
    tags:['Heroku', 'Travis CI', 'TDD', 'React', 'Socket IO', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'CSS', 'HTML5', 'Foundation'],
@@ -136,7 +136,7 @@ The LTDs could alert staff if a patient has left the vicinity or fallen over acc
 <li>User can post messages.</li>\
 <li>User can see an up-to-date list of messages.</li>\
 <li>Application runs in real-time without needing webpage refreshes.</li></ul>\
-  <p>See <a href="https://github.com/t-rappos/auction-system/blob/master/doc/chat-server.md">GitHub</a> for more information</p>\
+  <p>See <a target="_blank" href="https://github.com/t-rappos/auction-system/blob/master/doc/chat-server.md">GitHub</a> for more information</p>\
     ', category: 'web', priority:0},
 
 {name: 'DST Group Final Year Project, Robotic Teaming',icon:roboticsLogo, image: './assets/fyp.png',
@@ -167,7 +167,7 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
     text:'This project explores the use of a ABB robotic arm used for pick-and-place automation tasks. For dynamic operation and task-completion feed-back, computer vision is incorporated via a web-cam mounted in the work area.\
   More specifically, this project has been completed for an industry client, AME System Pty. Ltd., for automated cavity pin insertion. These pins are 3.5mm wide and are placed in holes between 5 and 9mm apart on a rubber socket.\
    Due to this small size, a high degree of accuracy and repeatability is required.\
-<p>The full report can be viewed at <a href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics', priority:0},
+<p>The full report can be viewed at <a target="_blank" href="https://github.com/PSmith4/Robotic-Hand-eye/blob/master/Report/HandEyereport.pdf">GitHub.</a></p>', category: 'robotics', priority:0},
 
 {name: 'DST Group Div3D, Defect Data Visualiser',icon:csLogo, image: "./assets/ibl.png",
    tags:['ParaView', 'C++', 'python', 'trac', 'git', 'MySql', 'NASTRAN', 'CMake', 'QT'],
@@ -203,11 +203,11 @@ and an unmanned ground vehicle (UGV), dealing with indoor and urban environmenta
 
 {name: 'Portfolio Website',icon:webLogo, image: DefaultImage,
    tags:['Heroku', 'React', 'NodeJS', 'Express', 'PostgreSQL', 'ES6', 'Bootstrap', 'CSS', 'HTML5'],
-    text:"<p>This portfolio website was created to showcase various projects that i've worked on.</p><a href='https://github.com/t-rappos/Portfolio/'>See github for more information.</a>", category: 'web', priority:0},
+    text:"<p>This portfolio website was created to showcase various projects that i've worked on.</p><a target='_blank' href='https://github.com/t-rappos/Portfolio/'>See github for more information.</a>", category: 'web', priority:0},
 
 {name: 'Andy Rappos WordPress Website',icon:webLogo, image: webLogo,
    tags:['Amazon AWS EC2', 'WordPress'],
-    text:'<p>A WordPress <a href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
+    text:'<p>A WordPress <a target="_blank" href="http://www.andyrappos.com/">website</a> set up on a amazonAWS EC2 instance.</p>\
     <p>Currently in maintenance mode (as requested by client) whilst waiting for content to be delivered.</p>', category: 'web', priority:1},
 
 {name: 'Current-C, Currency Conversion Android App',icon:csLogo, image: "./assets/currency.png",
@@ -273,7 +273,7 @@ class ProjectSection extends React.Component {
 
     return (
     <div className = "container-fluid" style = {projectSectionStyle}>
-      <p style ={headings.headingStyle} id='projects'>Projects i've worked on</p>
+      <p style ={headings.headingStyle} id='projects'>Projects I've worked on</p>
       <div className="row row-eq-height" >
         {items}
       </div>
