@@ -4,39 +4,51 @@ import { Button,Modal } from 'react-bootstrap';
 import Radium from 'radium';
 
 const styles = {
+  base:{
     cursor: 'pointer',
     textAlign: 'center',
     width: '250px',
     height: '250px',
     padding: '10px',
     marginLeft:'auto',
-    marginRight:'auto'
+    marginRight:'auto',
+    marginBottom: '40px',
+    transition: 'background-color 0.3s ease, opacity 0.3s ease',
+    opacity: '0.6'
+  },
+  hover:{
+    borderStyle: 'solid',
+    borderColor: 'rgba(0,0,0,0.1)',
+    borderWidth: '2px',
+    backgroundColor: 'rgba(255,228,192,0.4)',
+    borderRadius: '10px',
+    boxShadow: "6px 8px 11px rgba(0,0,0,0.1)",
+    opacity: '1.0'
+  }
 };
 
 const tagStyle = {
   base:{
     textAlign: 'justify',
     textAlignLast: 'center',
-    fontSize: '90%',
+    fontSize: '85%',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     transition: 'color 0.3s ease',
     color: 'rgba(0, 0, 0, 0.0)'
   },
   hover:{
-    color: 'rgba(0, 0, 0, 0.99)'
+    color: 'rgba(0, 0, 0, 0.99)',
+    fontSize: '85%',
   }
 };
 
 const iconBlurStyle = {
   base:{
-    transition: '-webkit-filter 0.3s ease, filter 0.3s ease',
-    'WebkitFilter': 'blur(2px)',
-    filter: 'blur(2px)'
+    //filter: 'blur(2px)'
   },
   hover:{
-    'WebkitFilter': 'blur(0px)',
-    filter: 'blur(0px)'
+    //filter: 'blur(0px)'
   }
 };
 
@@ -95,7 +107,7 @@ class ProjectItem extends React.Component {
           onClick={this.open.bind(this)}
           onMouseEnter= {this.onMouseEnter.bind(this)}
           onMouseLeave= {this.onMouseLeave.bind(this)}
-          style={styles}>
+          style={[styles.base, this.state.hover && styles.hover]}>
           <div style = {[iconBlurStyle.base, this.state.hover && iconBlurStyle.hover]}>
             <img style = {[iconStyle.base,iconStyle.priority[this.props.priority], this.state.hover && iconStyle.hover]} src={this.props.icon} alt=''/>
           </div>
