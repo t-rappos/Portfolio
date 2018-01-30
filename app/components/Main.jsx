@@ -4,6 +4,7 @@ let LandingPage = require('LandingPage');
 let SummarySection = require('SummarySection');
 let ProjectSection = require('ProjectSection');
 let DetailsSection = require('DetailsSection');
+let OutroPage = require('./OutroPage');
 
 const appStyle = {
 
@@ -38,6 +39,7 @@ class Main extends React.Component {
         <SummarySection/>
         <ProjectSection/>
         <DetailsSection/>
+        <OutroPage/>
       </div>
     );
   }
