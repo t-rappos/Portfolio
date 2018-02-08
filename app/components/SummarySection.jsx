@@ -17,6 +17,7 @@ class SummarySection extends React.Component {
     return (
     <div style = {summarySectionStyle}>
       <h3 id='about-me' style={headings.headingStyle}>Things I do</h3>
+      <div className="container-fluid">
       <div className="row">
         <div className={gridName}>
           <SummaryItem title='Robotics' img='./assets/logo-robotics2.png' text='Experience integrating software and hardware using embedded devices and ROS.'/>
@@ -27,6 +28,7 @@ class SummarySection extends React.Component {
         <div className={gridName}>
           <SummaryItem title='Web Development' img='./assets/logo-wd.png' text='Experience designing and programming websites.'/>
         </div>
+      </div>
       </div>
     </div>  );
   }

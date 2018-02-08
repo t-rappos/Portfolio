@@ -11,7 +11,7 @@ const detailsSectionStyle = {
 };
 
 const detailsTextStyle = {
-  width: '500px',
+  maxWidth: '500px',
   marginLeft : 'auto',
   marginRight : 'auto',
   overflow: 'hidden',
