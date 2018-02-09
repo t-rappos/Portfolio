@@ -15,7 +15,8 @@ const detailsTextStyle = {
   marginLeft : 'auto',
   marginRight : 'auto',
   overflow: 'hidden',
-  textOverflow: 'ellipsis'
+  textOverflow: 'ellipsis',
+  padding: '10px'
 };
 
 class DetailsSection extends React.Component {
