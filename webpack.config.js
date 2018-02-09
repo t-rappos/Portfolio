@@ -1,6 +1,6 @@
 
 var webpack = require("webpack");
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const json = require('json-loader');
 
 module.exports = {
@@ -24,8 +24,8 @@ module.exports = {
     compress: { warnings: false }
   }), //minify everything
   new webpack.optimize.AggressiveMergingPlugin()//Merge chunks
-  ,
-  new BundleAnalyzerPlugin()
+  // ,
+  // new BundleAnalyzerPlugin()
 
   ],
   output: {
