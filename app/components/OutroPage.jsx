@@ -30,7 +30,7 @@ class OutroPage extends React.Component {
   render() {
     return (
     <div style = {outroPageStyle} ref={node => this.node = node} className = 'background'>
-      <h2>Thanks for taking a look, hope your have a nice day.</h2>
+      <h2>Thanks for taking a look, hope you have a nice day.</h2>
     </div>  );
   }
 }

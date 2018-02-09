@@ -1,5 +1,5 @@
 import React from 'react';
-import {  MarkdownPreview  } from 'react-marked-markdown';
+import MarkdownPreview from 'react-markdown';
 let headings = require('./headings.jsx');
 import Colors from './colors.jsx';
 
@@ -34,7 +34,7 @@ class DetailsSection extends React.Component {
             especially the interaction between mechanics, robotics, electronics and software.</p>
 
         <p>The following are subjects that I'm interested in and have had experience with.</p>
-        <MarkdownPreview value="
+        <MarkdownPreview source="
 ### Front End
 - Javascript (ES6)
 - React
@@ -45,7 +45,7 @@ class DetailsSection extends React.Component {
 - HTML5
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Back End
 - Javascript (NodeJS, Express)
 - Java (Spring)
@@ -55,7 +55,7 @@ class DetailsSection extends React.Component {
 - User Authorization (Passport)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Software Applications
 - Python (SciPy, RenPy, NumPy)
 - Build configuration (CMake)
@@ -66,32 +66,32 @@ class DetailsSection extends React.Component {
 - Java (Android Studio, Gradle, Maven)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Embedded Devices
 - C (CodeWarrior, Arduino IDE, HCS12 uController)
 - C++ (Raspberry PI)
 - ROS (Robotic Operating System)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Continuous Deployment and Integration
 - Hosting
   - Amazon EC2 AWS (WordPress)
   - Heroku (Automated Deployment)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Integration / Deployment
 - TravisCI (Automated testing and Deployment)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Testing
 - Testing (Mocha)
 - Linting (ESLint)
 "/>
 
-<MarkdownPreview value="
+<MarkdownPreview source="
 ### Workflow
 "/>
 

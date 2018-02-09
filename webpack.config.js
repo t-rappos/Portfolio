@@ -1,5 +1,7 @@
 
 var webpack = require("webpack");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const json = require('json-loader');
 
 module.exports = {
   entry: ['script!jquery/dist/jquery.min.js',
@@ -13,13 +15,18 @@ module.exports = {
       'jQuery':'jquery'
     }),
     new webpack.DefinePlugin({ // <-- key to reducing React's size
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.DedupePlugin(), //dedupe similar code 
-    new webpack.optimize.UglifyJsPlugin(), //minify everything
-    new webpack.optimize.AggressiveMergingPlugin()//Merge chunks 
+    'process.env': {
+      'NODE_ENV': JSON.stringify('production')
+    }
+  }),
+  new webpack.optimize.DedupePlugin(), //dedupe similar code 
+  new webpack.optimize.UglifyJsPlugin({
+    compress: { warnings: false }
+  }), //minify everything
+  new webpack.optimize.AggressiveMergingPlugin()//Merge chunks
+  ,
+  new BundleAnalyzerPlugin()
+
   ],
   output: {
     path: __dirname,
@@ -78,6 +85,10 @@ module.exports = {
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url?limit=10000&mimetype=image/svg+xml'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },
